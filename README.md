@@ -2,6 +2,7 @@
 นายวีรภัทร ลีลาวิทยานนท์ 6210612823<br />
 
 https://youtu.be/Aunl24A3Nd0<br />
+*หมายเหตุ ได้ทำการ add count function ไปแล้ว แต่รูปภาพภายในกลับไม่อัพเดต สามารถดูรูปใหม่ได้ที่วิดีโอหรือ Folder Pic
 
 1.หน้าหลัก<br />
 ![UI01](Pic/Normal_Interface.png)<br />
