@@ -42,6 +42,7 @@ fun Greeting(name: String) {
 
 @Composable
 fun GuessNumber(random: Int) {
+    var count = remember { mutableStateOf(0) }
     var randomNumber = remember { mutableStateOf(random)}
     var output = remember { mutableStateOf("")}
     Column(
@@ -81,6 +82,7 @@ fun GuessNumber(random: Int) {
                     var random = nextInt(1, 1000)
                     randomNumber.value = random
                     output.value = ""
+                    count.value = 0
                 }
             ) {
                 Text(text = "Reset", fontSize = 30.sp)
@@ -90,6 +92,7 @@ fun GuessNumber(random: Int) {
                 onClick = {
                     var input = 0
                     var isdatText = 0
+                    count.value = count.value + 1
 
                     try {
                         input = text.toInt()
@@ -113,6 +116,11 @@ fun GuessNumber(random: Int) {
         }
         Text (
             text = "${output.value}",
+            fontSize = 18.sp
+        )
+
+        Text (
+            text = "You have guessed ${count.value} times",
             fontSize = 18.sp
         )
     /*
